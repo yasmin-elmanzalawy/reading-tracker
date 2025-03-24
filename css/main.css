@@ -1,8 +1,7 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
 }
 body {
   background: linear-gradient(rgba(30, 12, 0, 0.7), rgba(170, 145, 87, 0.3)),
@@ -15,7 +14,7 @@ body {
 
 /* banner section */
 
-.banner-section{
+.banner-section {
   overflow: hidden;
   height: 100vh;
   width: 100vw;
@@ -28,16 +27,15 @@ body {
   width: 150px;
   height: 250px;
   top: 100px;
-  left: calc(50% - (150px/2));
+  left: calc(50% - (150px / 2));
   transform-style: preserve-3d;
   transform: perspective(1000px);
   animation: autoRun 20s linear infinite;
   z-index: 1111;
 }
-.banner .content{
+.banner .content {
   text-align: center;
-  transform: translateY( calc(50vh - 60px));
-
+  transform: translateY(calc(50vh - 60px));
 }
 @keyframes autoRun {
   from {
@@ -60,76 +58,56 @@ body {
   height: 100%;
   object-fit: cover;
 }
-.banner .content h1{
+.banner .content h1 {
   font-weight: 600;
   font-size: 3rem;
   color: rgb(30, 12, 0);
 }
-.banner .content span{
+.banner .content span {
   -webkit-text-stroke: 1px rgb(30, 12, 0);
   color: transparent;
 }
 .banner .content p {
-  color:rgb(30, 12, 0);
+  color: rgb(30, 12, 0);
   font-size: 1em;
   font-weight: 500;
   padding: 20px;
 }
-/* 
-.banner .content {
-  position: absolute;
-  bottom: 10vh;
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(80vw, 100vw);
-  height: max-content;
-  padding-bottom: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-.banner .content h1 {
-  font-size: 6em;
-  line-height: 1em;
-  color: rgb(44, 10, 10);
-}
-.banner .content p {
-  font-size: 2em;
-  line-height: 1em;
-  color: rgb(44, 10, 10);
-}
-.banner .content h1 span {
-  -webkit-text-stroke: 3px rgb(44, 10, 10);
-  color: transparent;
-} */
-
 /* input section */
-.form-section {
+.form-section .form-floating {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  max-width: 100%;
 }
-
-.form-floating {
-  background-color: aqua;
-  min-width: 400px;
-  margin: 30px;
-}
-.form-floating label {
-  color: rgb(44, 10, 10);
+.form-section label{
+  color: #1E0C00;
   font-weight: 600;
+}
+.form-section input{
+  background-color: transparent;
+  border: solid 3px #1E0C00;
+  color:#1E0C00;
+}
+.addBtn{
+  padding:10px 20px;
+  border:3px solid #1E0C00;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #1E0C00;
+  transition: 0.3s;
+}
+.addBtn:hover{
+background-color: #1E0C00;
+color: antiquewhite;
 }
 
 /* @media (max-width: 1024px) {
   .banner .slider {
     width: 150px;
     height: 200px;
-  }
+    }
   .banner .slider .item {
     transform: rotateY(
-        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
       )
       translateZ(40vw);
   }
@@ -143,24 +121,13 @@ body {
   .banner .slider .item {
     transform: rotateY(
         calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
-      )
-      translateZ(40vw);
-  }
+        )
+        translateZ(40vw);
+        }
 } */
-
-/* @media (max-width: 480px) {
-  .banner-section{
-    overflow: hidden;
+/* 
+@media (max-width: 480px) {
+  .form-section label{
+    font-size: 14px;
   }
-  .banner .slider {
-    width: 100px;
-    height: 150px;
-  }
-  .banner .slider .item {
-    transform: rotateY(
-        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
-      )
-      translateZ(100vw);
-  }
-   
-} */
+      } */

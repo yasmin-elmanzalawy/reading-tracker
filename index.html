@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <section class="banner-section">
+    <section class="banner-section container">
         <div class="banner">
             <div class="slider" style="--quantity: 10">
                 <div class="item" style="--position: 1"><img src="./imgs/ladyMidnight.jpg" alt=""></div>
@@ -33,16 +33,23 @@
             </div>
         </div>
     </section>
-    <section class="form-section">
+    <section class="form-section container mb-4">
         <!-- input for the: name, description, photo -->
-        <!-- <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="bookName" placeholder="bookName">
-            <label for="bookName">What's the gate name of you latest adventure? </label>
+        <div class="mb-3">
+            <label for="bookName" class="form-label">Name of you latest adventure? </label>
+            <input type="text" class="form-control" id="bookName">
         </div>
-        <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Password</label>
-        </div> -->
+        <div class="mb-3">
+            <label for="bookDes" class="form-label">What were your thoughts? </label>
+            <input type="text" class="form-control" id="bookDes">
+        </div>
+
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Default file input example</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+          <button type="button" class="addBtn mt-3">Add Book</button>
+
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
